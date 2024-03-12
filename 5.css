@@ -1,156 +1,173 @@
 *{
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
 }
 
 html,body{
     width: 100%;
     height: 100%;
-    
+    background-color: #353639;
 }
 
 #main{
-   
+    width: 100%;
     height: 100%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#main img{
-    height: 80px;
-    height: 1600px;
-    position: relative;
-    z-index: 99;
-    object-fit:cover;
-    
-}
-
-#scroll{
+#top{
+   width: 100%;
+   height: 60%;
    
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    height: 100px;
-    white-space: nowrap;
-    /* overflow-x: auto; 
-     overflow-y: hidden; */
-}
-#nav{
-    width: 100%;
-    color: rgb(33, 230, 23);
-    font-weight: 100;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 55px;
-    position: absolute;
-    width: 55cm;
-    text-align: center;
-    top:2% ;
-   
-}
-
-#scroll h1{
-    animation-name: scroll;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    display: inline-block;
-    font-size: 300px;
-    font-family: sans-serif;
-    font-weight: 1000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-right: 30px;
-    
-}
-#scroll::-webkit-scrollbar{
-    display: none;
-}
-#scroll2{
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    height: 100px;
-    z-index: 100;
-    white-space: nowrap;
-    /* overflow-x: auto; 
-     overflow-y: hidden; */
-}
-
-#scroll2 h1{
-    animation-name: scroll;
-    animation-duration: 1s;
-    animation-direction: reverse;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    display: inline-block;
-    font-size: 300px;
-    font-family: sans-serif;
-    font-weight: 1000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-right: 30px;
-    color: transparent;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: black;
-    
-    
-}
-#scroll2::-webkit-scrollbar{
-    display: none;
-}
-#scroll3{
-    
-    position: absolute;
-    top: 55%;
-    width: 100%;
-    height: 100px;
-    white-space: nowrap;
-     /* overflow-x: auto; 
-     overflow-y: hidden;  */
+  background-size: cover;
+  background-position: 50% 40%;
+   background-image: url("engin-akyurt-AjMXxHwxW_k-unsplash.jpg");
 } 
-
-#scroll3 h1{
-    animation-name: scroll;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    display: inline-block;
-    font-size: 300px;
-    font-family: sans-serif;
-    font-weight: 1000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-right: 30px;
+#text{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 120%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(178, 131, 131); */
+    position: absolute;
+    bottom: 20%;
+    padding: 0 24vw;
+    align-items: center;
+    
     
 }
-#scroll3::-webkit-scrollbar{
-    display: none;
+#textright{
+    /* background-color: red; */
+    align-items: center;
+    display: flex;
+    width: 80%;  
+    justify-content: space-between;
+    
+    
+}
+#textimg{
+    position: relative;
+    top: 20px;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    gap: 20px;
+}
+#textimg img{
+    
+    color: rgb(252, 252, 255);
 }
 
-#text
-{   
-    font-weight: 800;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 45px;
-    position: absolute;
-    width: 80%;
-    text-align: center;
-    top:18% ;
-   z-index: 300;
-
+#textright p{
+    position: relative;
+    top: 60px;
+    font-size: 16px;
+    width: 40%;
+}
+#text h1{
+    color: white;
+    font-size: 6vw;
+    font-weight: 100;
 }
 
-@keyframes scroll {
-    0%{
-        transform: translateX(calc(-100%  - 32px));
-    }
-    100%{
-        transform: translateX(0);
-    }
+#bottom{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background-color: #EEEEEE;
+}
+
+#b1{
+     /* display: flex; */
+     /*flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+    padding: 30px;
+    width: 25%;
+    background-color: #EEEEEE;
+    height: 20%;
+}
+#b1 h2{
+   font-size: 40px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  
+#b1 p{
+    font-size: 20px;
+    margin-top: 70px;
+}  
+#b2{
+    background-size: cover;
+    background-position: center;
+    background-image: url("lauren-sepsi-Z1PrwbGYO48-unsplash.jpg");
+    width: 25%;
+    background-color: rgb(98, 22, 160);
+    height: 100%;
+}
+#b3{
+    width: 20%;
+    background-color: rgb(7, 11, 7);
+    height: 100%;
+}
+#b3top{
+    background-image: url("https://images.unsplash.com/photo-1514015917727-8bba07173e47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFlc3RoZXRpYyUyMGJveXxlbnwwfHwwfHx8MA%3D%3D");
+    background-position: center;
+    height: 50%;
+    background-color: #fff;
+   
+}
+#b3bottom{
+    height: 50%;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1617505196480-d80d79bfc91c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFlc3RoZXRpYyUyMGJveXxlbnwwfHwwfHx8MA%3D%3D");
+}
+#b4{
+    width: 30%;
+    height: 100%;
+    background-color: #1F1F1F;
+    display:flex;
+    /* flex-direction: column-reverse;
+     */
+     justify-content: space-between;
+}
+#txt{
+    color: #52545a;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#txt h2{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#txt p1{
+    padding: 0px 80px 0 80px;
+    font-size: 22px;
+}
+#txt p2{
+    padding: 0 80px;
+    width: 90%;
+    font-size: 22px;
+}
+#photo{ 
+    width: 60px; 
+    height: 60px; 
+     /* background-color: red; */
+     border-radius: 50%;
+ } 
+#overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 248, 255,0.1);
+    
 }
